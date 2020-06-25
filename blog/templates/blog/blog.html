@@ -1,0 +1,7 @@
+Hey AuthenticationMiddleware
+{% for blog in blog.all %}
+
+<a href = '{% url "blog:detail" blog.id %}'>{{blog.title}}</a>
+{{blog.summary}}
+{{blog.dot_pretty}}
+{% endfor %}
