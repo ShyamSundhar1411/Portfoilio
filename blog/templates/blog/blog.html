@@ -1,7 +1,10 @@
+{% extends 'personal/base.html' %}
+{% block content %}
 Hey AuthenticationMiddleware
 {% for blog in blog.all %}
 
 <a href = '{% url "blog:detail" blog.id %}'>{{blog.title}}</a>
 {{blog.summary}}
-{{blog.dot_pretty}}
+{{blog.dot|date:'M d Y'}}
 {% endfor %}
+{% endblock %}

@@ -4,3 +4,5 @@ class Project(models.Model):
     image = models.ImageField(upload_to = 'images/')
     descriptionn = models.CharField(max_length = 250)
     url = models.URLField(blank = True)
+    def __str__(self):
+        return self.title
