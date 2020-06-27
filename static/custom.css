@@ -1,0 +1,18 @@
+
+.navbar-nav .nav-link:hover{
+  color:green !important;
+}
+.navbar-nav .nav-link{
+  font-weight:400;
+  color:rgba(0,0,0,0.5) !important;
+}
+
+@media (min-width: 992px) {
+    #blogtitle {
+        font-size: 5rem;
+    }
+    #hometext{
+      font-weight:lighter;
+    }
+
+}
