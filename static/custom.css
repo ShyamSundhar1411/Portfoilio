@@ -6,6 +6,9 @@
   font-weight:400;
   color:rgba(0,0,0,0.5) !important;
 }
+body {
+    font-family: 'Lato', sans-serif;
+}
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {}
 
@@ -27,5 +30,4 @@
     #hometext{
       font-weight:lighter;
     }
-
 }
