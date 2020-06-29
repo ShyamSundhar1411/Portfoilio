@@ -31,29 +31,29 @@ body {
 }
 @media only screen and (min-width: 350px) {
   #prof{
-    float: right !important;
+    float: left !important;
   }
 }
 @media only screen and (min-width: 370px) {
   #prof{
-    float: right !important;
+    float: left !important;
   }
 }
 @media only screen and (min-width: 371px) {
   #prof{
-    float: right !important;
+    float: left !important;
   }
 
 }
 @media only screen and (max-width: 500px) {
   #prof{
-    float: right !important;
+    float: left !important;
   }
 
 }
 @media only screen and (min-width: 900px) {
   #prof{
-    float: right !important;
+    float: left !important;
   }
 
 }
