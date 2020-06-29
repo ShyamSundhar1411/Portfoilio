@@ -34,7 +34,7 @@ body {
     float: right !important;
   }
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (min-width: 370px) {
   #prof{
     float: right !important;
   }
@@ -43,5 +43,17 @@ body {
   #prof{
     float: right !important;
   }
-  
+
+}
+@media only screen and (max-width: 500px) {
+  #prof{
+    float: right !important;
+  }
+
+}
+@media only screen and (min-width: 900px) {
+  #prof{
+    float: right !important;
+  }
+
 }
