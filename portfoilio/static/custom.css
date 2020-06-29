@@ -29,3 +29,19 @@ body {
       font-weight:lighter;
     }
 }
+@media only screen and (min-width: 350px) {
+  #prof{
+    float: right !important;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #prof{
+    float: right !important;
+  }
+}
+@media only screen and (min-width: 371px) {
+  #prof{
+    float: right !important;
+  }
+  
+}
