@@ -18,6 +18,7 @@
   <style>
   body {
     font-family: 'Lato', sans-serif;
+    
   }
 
   @media only screen and (min-width: 900px) {
@@ -38,51 +39,57 @@
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
+  }
+  #carouselExampleIndicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 75%;
 }
-    </style>
-    <title>Shyam Sundhar</title>
-    </head>
-    <body>
-    <div class = 'container'>
-    <nav class="navbar navbar-expand-lg navbar-light " style = 'color:white' id = 'topnav'>
-    <a class="navbar-brand" href="{% url 'home' %}">
-    <img src = '{% static "profile pic 1.png" %}' height= 30 width=30 class="d-inline-block align-top">
-    Shyam Sundhar
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class = 'navbar-nav ml-auto'>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-      <a class="nav-link" href="{% url 'about' %}" >About me<span class="sr-only">(current)</span></a>
-      </li>
-    <li class="nav-item active">
-    <a class="nav-link" href="https://github.com/ShyamSundhar1411" target = '_blank'>GitHub<span class="sr-only">(current)</span></a>
-    </li>
 
-    <li class="nav-item">
-    <a class="nav-link active" href="https://www.Youtube.com/c/gamingwithskytorrush" target = "_blank">YouTube</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link active" href="{% url 'blog:blog' %}">Blog</a>
-    </li>
-    </ul>
-    </div>
-    </div>
+  </style>
+  <title>Shyam Sundhar</title>
+</head>
+<body>
+  <div class = 'container' id = 'nab'>
+    <nav class="navbar navbar-expand-lg navbar-light " style = 'color:white' id = 'topnav'>
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src = '{% static "profile pic 1.png" %}' height= 30 width=30 class="d-inline-block align-top">
+        Shyam Sundhar
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class = 'navbar-nav ml-auto'>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'about' %}" >About me<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="https://github.com/ShyamSundhar1411" target = '_blank'>GitHub<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.Youtube.com/c/gamingwithskytorrush" target = "_blank">YouTube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'blog:blog' %}">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     {% block content %}
     {% endblock %}
     <footer class="text-muted">
-    <div class="container text-center">
-    <p>© Shyam {% now "Y" %}</p>
-    </footer>
+      <div class="container text-center">
+        <p>© Shyam {% now "Y" %}</p>
+      </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
     </html>
