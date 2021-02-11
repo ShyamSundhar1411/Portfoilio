@@ -18,14 +18,9 @@
   <style>
   body {
     font-family: 'Lato', sans-serif;
-    
+
   }
 
-  @media only screen and (min-width: 900px) {
-    #prof{
-      float: left !important;
-    }
-  }
   .left, .right {
     float: left;
     width: 20%; /* The width is 20%, by default */
@@ -35,22 +30,26 @@
     float: left;
     width: 60%; /* The width is 60%, by default */
   }
-  @media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
+  .carousel-item{
+    height: 400px !important;
   }
   #carouselExampleIndicators li {
-  width: 7px;
-  height: 7px;
-  border-radius: 75%;
+    width: 7px;
+    height: 7px;
+    border-radius: 75%;
+  }
+  .carousel-caption {
+    right: 5%;
+    text-align: right;
+    max-width: 300px;
+    left: auto;
+    padding:5px;
 }
-
   </style>
   <title>Shyam Sundhar</title>
 </head>
 <body>
-  <div class = 'container' id = 'nab'>
+  <div class = 'container' id = 'nav'>
     <nav class="navbar navbar-expand-lg navbar-light " style = 'color:white' id = 'topnav'>
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src = '{% static "profile pic 1.png" %}' height= 30 width=30 class="d-inline-block align-top">
@@ -82,6 +81,23 @@
     {% block content %}
     {% endblock %}
     <footer class="text-muted">
+      <div class="row">
+    <div class="col-md-6 text-right"><!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5fd727e5a8a254155ab3160d/1epg77n89';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+<!--End of Tawk.to Script--></div>
+    </div>
+      <!--Start of Tawk.to Script-->
+<!--End of Tawk.to Script-->
       <div class="container text-center">
         <p>© Shyam {% now "Y" %}</p>
       </footer>
