@@ -129,3 +129,9 @@ try :
     from .local_settings import *
 except ImportError:
     print('Looks like no local file. You must be on production.')
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'Cached_Table',
+    }
+}
